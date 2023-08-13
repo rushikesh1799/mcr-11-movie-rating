@@ -89,14 +89,13 @@ a {
 }
 
 .add-new-movie-btn {
-    background-color: #333232;
-    color: #fff;
-    padding: 8px 15px;
-    font-size: 16px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
+    background-color: #333232 !important;
+    color: #fff !important;
+    padding: 6px 12px !important;
+    font-size: 16px !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
 }
 
 
