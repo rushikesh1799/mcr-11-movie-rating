@@ -23,9 +23,9 @@ export const MoviesProvider = ({ children }) => {
         searchedText: "",
     });
 
-    useEffect(() => {
-        console.log(filters);
-    }, [filters]);
+    // useEffect(() => {
+    //     console.log(filters);
+    // }, [filters]);
 
     useEffect(() => {
         if (storedState) {
@@ -89,10 +89,6 @@ export const MoviesProvider = ({ children }) => {
         // localStorage.setItem("allMoviesData", JSON.stringify(allMoviesData));
         // setMoviesList((prev) => [...prev, { ...movieDetails }]);
     };
-
-    useEffect(() => {
-        console.log(watchLater);
-    }, [watchLater]);
 
     return (
         <MoviesContext.Provider

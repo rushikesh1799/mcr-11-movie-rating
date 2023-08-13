@@ -19,10 +19,6 @@ const Home = () => {
                   return moviesGenres.includes(filters.genre);
               });
 
-    // const asd = ["Drama", "Romance"].map((genre) => genre.toLowerCase());
-
-    // console.log(asd);
-
     const moviesByYear =
         filters.release_year === "all"
             ? moviesByGenres
@@ -52,8 +48,6 @@ const Home = () => {
                           .toLowerCase()
                           .includes(filters.searchedText.toLowerCase())
               );
-
-    // console.log(moviesBySearch);
 
     return (
         <div>
