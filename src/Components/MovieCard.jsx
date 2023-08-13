@@ -23,8 +23,12 @@ const MovieCard = ({ movie }) => {
                 onClick={() => navigate(`/movies/${movie.id}`)}
             />
             <div className="movie_info">
-                <h1>{movie.title}</h1>
-                <p>{movie.summary}</p>
+                <h1 onClick={() => navigate(`/movies/${movie.id}`)}>
+                    {movie.title}
+                </h1>
+                <p onClick={() => navigate(`/movies/${movie.id}`)}>
+                    {movie.summary}
+                </p>
                 <div className="movie_card_btns">
                     <div>
                         {isMovieAvailableInStarred(movie.id) ? (
