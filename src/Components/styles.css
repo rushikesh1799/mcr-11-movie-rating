@@ -1,0 +1,180 @@
+.navigation_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #FFF;
+    background-color: black;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar_right {
+    display: flex;
+    gap: 2rem;
+}
+
+.search_input {
+    width: 300px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.movies_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.movie_card {
+    width: 300px;
+
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px 0 rgba(58, 53, 65, .1);
+    padding: 10px 20px;
+}
+
+.movie_img {
+    width: 200px;
+    height: 300px;
+}
+
+.movie_info {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.movie_info h1 {
+    margin: 0;
+}
+
+.movie_info p {
+    margin: 0;
+}
+
+
+.movie_card_btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header .header-title {
+    font-size: 22px;
+    color: #111;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header .select {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.add-new-movie-btn {
+    background-color: #333232;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.new-movie-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.form-label {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+
+.single-movie-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px 0 rgba(58, 53, 65, .1);
+    padding: 10px 20px;
+    margin: 1rem;
+
+}
+
+.single-product-img {
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    padding: 0px 15px;
+}
+
+.movie-details h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.movie-details p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px 0px 8px 0px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #333232;
+    color: #FFF;
+    border-radius: 0.25rem;
+}
