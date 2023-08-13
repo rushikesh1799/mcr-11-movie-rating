@@ -104,7 +104,7 @@ a {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 10px;
+    gap: 5px;
     padding: 10px 0px;
 }
 
@@ -188,4 +188,20 @@ a {
     background-color: #333232;
     color: #fff;
     font-weight: 600;
+}
+
+.cast_p span::after {
+    content: ", ";
+}
+
+.cast_p span:last-child::after {
+    content: "";
+}
+
+.genre_p span::after {
+    content: ", ";
+}
+
+.genre_p span:last-child::after {
+    content: "";
 }

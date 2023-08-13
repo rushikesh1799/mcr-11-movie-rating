@@ -16,6 +16,7 @@ const style = {
     border: "1px solid #000",
     boxShadow: 24,
     p: 4,
+    padding: "24px",
 };
 
 export const AddNewMovieModal = () => {
@@ -29,6 +30,9 @@ export const AddNewMovieModal = () => {
         title: "",
         year: "",
         genre: "",
+        cast: "",
+        writer: "",
+        director: "",
         rating: "",
         summary: "",
         imageURL: "",
@@ -38,6 +42,8 @@ export const AddNewMovieModal = () => {
         const { name, value } = e.target;
         if (name === "genre") {
             setMovieDetails((prev) => ({ ...prev, genre: value.split(",") }));
+        } else if (name === "cast") {
+            setMovieDetails((prev) => ({ ...prev, cast: value.split(",") }));
         } else {
             setMovieDetails((prev) => ({ ...prev, [name]: value }));
         }
@@ -49,6 +55,9 @@ export const AddNewMovieModal = () => {
             title: "",
             year: "",
             genre: "",
+            cast: "",
+            writer: "",
+            director: "",
             rating: "",
             summary: "",
             imageURL: "",
@@ -62,6 +71,9 @@ export const AddNewMovieModal = () => {
             movieDetails.genre === "" ||
             movieDetails.summary === "" ||
             movieDetails.year === "" ||
+            movieDetails.cast === "" ||
+            movieDetails.writer === "" ||
+            movieDetails.director === "" ||
             movieDetails.rating === "" ||
             movieDetails.imageURL === ""
         ) {
@@ -123,6 +135,45 @@ export const AddNewMovieModal = () => {
                                 placeholder="Add genre's separated by comma's"
                             />
                         </div>
+
+                        <div className="group">
+                            <label className="form-label" htmlFor="cast">
+                                Cast:
+                            </label>
+                            <input
+                                value={movieDetails.cast}
+                                onChange={(e) => handleChange(e)}
+                                name="cast"
+                                className="form-input"
+                                type="text"
+                                placeholder="Add Cast members separated by comma's"
+                            />
+                        </div>
+                        <div className="group">
+                            <label className="form-label" htmlFor="writer">
+                                Writer:
+                            </label>
+                            <input
+                                value={movieDetails.writer}
+                                onChange={(e) => handleChange(e)}
+                                name="writer"
+                                className="form-input"
+                                type="text"
+                            />
+                        </div>
+                        <div className="group">
+                            <label className="form-label" htmlFor="director">
+                                Director:
+                            </label>
+                            <input
+                                value={movieDetails.director}
+                                onChange={(e) => handleChange(e)}
+                                name="director"
+                                className="form-input"
+                                type="text"
+                            />
+                        </div>
+
                         <div className="group">
                             <label className="form-label" htmlFor="summary">
                                 Summary:
